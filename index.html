@@ -1,0 +1,95 @@
+theme: jekyll-theme-minimal
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rating the Presidents</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <body>
+    <button id="modalButton">Click to see more</button>
+
+<!-- Modal content -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Click where you want to go!</h2>
+    </div>
+    <div class="modal-body">
+      <ul>
+        <li class="crumb"><a href="login.html">Login</a></li>
+        <li class="crumb"><a href="index.html">Home</a></li>
+        <li class="crumb"><a href="Rating.html">Ratings</a></li>
+      </ul>
+      <p>Make a difference in someonelse life!</p>
+    </div>
+    <div class="modal-footer">
+      <h3>What do you want to accomplish?</h3>
+    </div>
+  </div>
+</div>
+  
+
+    <main>
+     <aside>
+      <form>
+        <h2>Contribute to our poll</h2>
+        <!-- <input 
+            type='text'
+            id="title"
+            placeholder="Who is your favorite President?"/> -->
+            <label for="user-name">Your Name</label>
+            <input type="text" id="user-name" disabled>
+            <label id="name-input" for="presidents-name">Select the name of President </label>
+            <select id="presidents-name" name="presidents-name" ></select>
+        <input 
+        name="presidents-comment"
+            type='text'
+            id="president-comment"
+            placeholder='Write a comment!!'/>
+
+      
+       
+          <h4>Rating</h4>
+          <div class="radio">
+              <label for="rating-one">1:</label>
+              <input type="radio" name="rating" value="1" id="rating-one" checked="true"/>
+              <label for="rating-two">2:</label>
+              <input type="radio" name="rating" value="2" id="rating-two"/>
+              <label for="rating-three">3:</label>
+              <input type="radio" name="rating" value="3" id="rating-three"/>
+              <label for="rating-four">4:</label>
+              <input type="radio" name="rating" value="4" id="rating-four"/>
+              <label for="rating-five">5:</label>
+              <input type="radio" name="rating" value="5" id="rating-five"/>
+          </div>
+          
+          <button id="submitBtn">Submit</button>
+          
+      </form>
+      <!-- <p>Comments</p> -->
+      <div id="see-all-comments">
+        <section id="comments-container"></section>
+        <!-- <button id="allComments">See All Comments</button> -->
+      </div>
+      <div id="user-comments"></div>
+   
+
+    </aside>
+    <h1 id="title">Presidents</h1>
+    <div id="all-pres">
+    <section id="pres-container2"></section>
+
+    <section id="presidents2-list"></section>
+  </main>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <script src="indexSecond.js"></script>
+
+</body>
+</html>

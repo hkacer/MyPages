@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flexbox;
+  border: 10px;
+  max-width: 225px;
+overflow-x: hidden;
+border: 2px solid rgb(245, 179, 242);
+border-radius: 10px;
+padding: 10px;
+margin: 30px 70px;
+background-color: rgb(195, 238, 244);
+
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: rgb(229, 73, 235);
+  transition: background-color 0.5s ease;
+}
+body {
+  background-color: rgb(195, 238, 244)
+}
+
+header {
+  height: 80px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  color: blanchedalmond;
+}
+
+main {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+ 
+  height: 350px;
+  background-color: rgb(247, 188, 242);
+ 
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  margin:0px 250px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #93f0f3;
+  width: 100px;
+  height: 40px;
+  color: rgb(10, 1, 20);
+  border: none;
+  margin: 5px;
+}
+button:hover {
+  color: rgb(251, 249, 251);
+  background-color: rgb(246, 65, 125);
+  flex-wrap: wrap;
+}
+
+#president-comment:hover, #user-name:hover{
+  
+    color: rgb(241, 233, 241);
+    background-color: rgb(246, 65, 125);
+    flex-wrap: wrap;
+  
+}
+
+input[type='text'] {
+  width: 85%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #232323;
+  color: #232323;
+  background-color: rgb(214, 244, 245);
+}
+
+#ratings-container {
+  width: 85%;
+  display: inline;
+  
+}
+
+#radio-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#pres-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pres-cover {
+  width: 200px; 
+  height: 300px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.pres-card {
+  background-color: blanchedalmond;
+  width: 200px;
+  margin: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#see-all-comments{
+  width: 600px;
+  height:390px;
+overflow-x: hidden;
+margin-right: 50px;
+border-radius: 20px;
+padding: 10px;
+margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+/* display: flex; */
+  /* flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* ;
+  flex-grow: 2;
+   */ 
+   background-color:rgb(247, 188, 242);
+
+}
+.allCom{
+ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.comments-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+.pres-title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.pres-rating {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.btns-container {
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+.btns-container > button {
+  width: 20px;
+}
+
+#all-pres{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.president-card{
+max-width: 225px;
+overflow-x: hidden;
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+margin: 10px 0px;
+
+
+}
+
+.crumb{
+  display: inline;
+  margin: 0px 10px;
+
+}
+select{
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+border-radius: 10px;
+padding: 10px;
+margin: 10px 0px;
+align-items: center;
+}
+p {
+  color: black;
+  transition: color 0.5s ease;
+  border-radius: 10px;
+  margin: 0px 20px;
+  
+}
+
+p:hover {
+  color: rgb(251, 249, 251);
+  background-color: rgb(246, 65, 125);
+  flex-wrap: wrap;
+}
+h3,h1 {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+h3:hover,h1:hover{
+  color: rgb(251, 249, 251);
+  background-color: rgb(246, 65, 125);
+}
+aside{
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+ 
+}
+#user-comments{
+  display: flex;
+
+  width: 200px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Style the modal content */
+.modal-content {
+  position: relative;
+  background-color: #b9f9f7;
+  margin: auto;
+  padding: 10;
+  border: 1px solid #888;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(65, 55, 55, 0.2),0 6px 20px 0 rgba(15, 14, 14, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Style the modal header */
+/* Style the modal header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #efb6f0;
+  color: rgb(1, 13, 20);
+}
+
+/* Style the modal body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Style the modal footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #fab7ef;
+  color: white;
+}
+
+/* Style the close button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
